@@ -10,7 +10,7 @@ The above was achieved using the U-net architecture. It is a type of CNN consist
 Working:
 After loading in the regular pictures and their segmented versions from the CamVid dataset, a function maps the the path of an image to the path of its segmentation. Forming and training the model is done with the help of fastai library in Pytorch, using the unet_learner class and passing the required parameters to create the U-net. The encoder network used is Resnet 34. This is followed by searching a fitting learning rate using fastai’s learn.lr_find() and training the model. 
 
-After initial training, standardly only the decoder is unfrozen, which means that our pretrained encoder didn’t receive any training yet so after observing the results, the whole model is trained. An accuracy of 93% was achieved.
+After initial training, standardly only the decoder is unfrozen, which means that our pretrained encoder didn’t receive any training yet so after observing the results, the whole model is trained.
 
 # Steps
 
